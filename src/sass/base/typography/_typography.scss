@@ -1,0 +1,32 @@
+@import url("..//fonts/neue-montreal/stylesheet.css");
+@import url("..//fonts/pp-right-gothic/stylesheet.css");
+@import url("..//fonts/bebas-neue/stylesheet.css");
+@import url("..//fonts/galderglynn/stylesheet.css");
+@import url("..//fonts/oswald/stylesheet.css");
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	font-size: 1rem;
+	line-height: $font__line-height-body;
+}
+
+.neue-montreal {
+	font-family: "Neue Montreal", sans-serif;
+}
+
+.bebas-neue {
+	font-family: "Bebas Neue", sans-serif;
+}
+
+.galderglynn-CdRg {
+	font-family: "Oswald", sans-serif;
+}
+
+@import "headings";
+@import "copy";

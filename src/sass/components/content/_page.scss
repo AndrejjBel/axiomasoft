@@ -1,0 +1,127 @@
+.section-page-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 145px;
+    padding-bottom: 145px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 160px;
+    line-height: 80%;
+    text-transform: uppercase;
+    border-bottom: 1px solid $color__border-header;
+
+    @media (max-width: 1024px) {
+        font-size: 100px;
+    }
+
+    @media (max-width: 579px) {
+        font-size: 80px;
+    }
+
+    @media (max-width: 479px) {
+        font-size: 60px;
+    }
+
+    @media (max-width: 369px) {
+        font-size: 40px;
+    }
+
+    &__title {}
+
+    &__count {}
+}
+
+.approach {
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 56px;
+
+        &__item {
+            width: calc((100% - 60px) / 4);
+            flex: none;
+            border: 1px solid $color__border-header;
+            padding: 32px;
+
+            @media (max-width: 1349px) {
+                padding: 24px;
+            }
+
+            @media (max-width: 1199px) {
+                width: calc((100% - 20px) / 2);
+            }
+
+            @media (max-width: 567px) {
+                width: 100% ;
+            }
+
+            &__number {
+                font-style: normal;
+                font-weight: 800;
+                font-size: 160px;
+                line-height: 80%;
+                margin-bottom: 196px;
+                color: rgba(43, 43, 43, 0.08);
+
+                @media (max-width: 1349px) {
+                    margin-bottom: 100px;
+                }
+            }
+
+            &__title {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 135%;
+            }
+
+            &__subtitle {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 132%;
+            }
+        }
+    }
+}
+
+.columns-two {
+    margin-top: 80px;
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 124%;
+
+        &__left {
+            width: 50%;
+
+            @media (max-width: 819px) {
+                width: 100%;
+            }
+        }
+
+        &__right {
+            width: 50%;
+
+            @media (max-width: 819px) {
+                width: 100%;
+            }
+
+            &___content {
+                width: 375px;
+
+                @media (max-width: 819px) {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}

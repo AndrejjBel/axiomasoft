@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Galderglynn 1884 Cd Rg';
+    src: url('Galderglynn1884CdRg-Italic.eot');
+    src: local('Galderglynn1884CdRg-Italic'),
+        url('Galderglynn1884CdRg-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884CdRg-Italic.woff2') format('woff2'),
+        url('Galderglynn1884CdRg-Italic.woff') format('woff'),
+        url('Galderglynn1884CdRg-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Cd Lt';
+    src: url('Galderglynn1884CdLt-Regular.eot');
+    src: local('Galderglynn1884CdLt-Regular'),
+        url('Galderglynn1884CdLt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884CdLt-Regular.woff2') format('woff2'),
+        url('Galderglynn1884CdLt-Regular.woff') format('woff'),
+        url('Galderglynn1884CdLt-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Engraved';
+    src: url('Galderglynn1884Engraved-Regular.eot');
+    src: local('Galderglynn1884Engraved-Regular'),
+        url('Galderglynn1884Engraved-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884Engraved-Regular.woff2') format('woff2'),
+        url('Galderglynn1884Engraved-Regular.woff') format('woff'),
+        url('Galderglynn1884Engraved-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Cd Lt';
+    src: url('Galderglynn1884CdLt-Italic.eot');
+    src: local('Galderglynn1884CdLt-Italic'),
+        url('Galderglynn1884CdLt-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884CdLt-Italic.woff2') format('woff2'),
+        url('Galderglynn1884CdLt-Italic.woff') format('woff'),
+        url('Galderglynn1884CdLt-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Sq Rg';
+    src: url('Galderglynn1884SqRg-Bold.eot');
+    src: local('Galderglynn1884SqRg-Bold'),
+        url('Galderglynn1884SqRg-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884SqRg-Bold.woff2') format('woff2'),
+        url('Galderglynn1884SqRg-Bold.woff') format('woff'),
+        url('Galderglynn1884SqRg-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Sq Rg';
+    src: url('Galderglynn1884SqRg-Regular.eot');
+    src: local('Galderglynn1884SqRg-Regular'),
+        url('Galderglynn1884SqRg-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884SqRg-Regular.woff2') format('woff2'),
+        url('Galderglynn1884SqRg-Regular.woff') format('woff'),
+        url('Galderglynn1884SqRg-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Sh Cd';
+    src: url('Galderglynn1884ShCd-Regular.eot');
+    src: local('Galderglynn1884ShCd-Regular'),
+        url('Galderglynn1884ShCd-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884ShCd-Regular.woff2') format('woff2'),
+        url('Galderglynn1884ShCd-Regular.woff') format('woff'),
+        url('Galderglynn1884ShCd-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Db';
+    src: url('Galderglynn1884Db-Regular.eot');
+    src: local('Galderglynn1884Db-Regular'),
+        url('Galderglynn1884Db-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884Db-Regular.woff2') format('woff2'),
+        url('Galderglynn1884Db-Regular.woff') format('woff'),
+        url('Galderglynn1884Db-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Lt';
+    src: url('Galderglynn1884Lt-Italic.eot');
+    src: local('Galderglynn1884Lt-Italic'),
+        url('Galderglynn1884Lt-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884Lt-Italic.woff2') format('woff2'),
+        url('Galderglynn1884Lt-Italic.woff') format('woff'),
+        url('Galderglynn1884Lt-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Sq Lt';
+    src: url('Galderglynn1884SqLt-Regular.eot');
+    src: local('Galderglynn1884SqLt-Regular'),
+        url('Galderglynn1884SqLt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884SqLt-Regular.woff2') format('woff2'),
+        url('Galderglynn1884SqLt-Regular.woff') format('woff'),
+        url('Galderglynn1884SqLt-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Rg';
+    src: url('Galderglynn1884Rg-Italic.eot');
+    src: local('Galderglynn1884Rg-Italic'),
+        url('Galderglynn1884Rg-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884Rg-Italic.woff2') format('woff2'),
+        url('Galderglynn1884Rg-Italic.woff') format('woff'),
+        url('Galderglynn1884Rg-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 El';
+    src: url('Galderglynn1884El-Regular.eot');
+    src: local('Galderglynn1884El-Regular'),
+        url('Galderglynn1884El-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884El-Regular.woff2') format('woff2'),
+        url('Galderglynn1884El-Regular.woff') format('woff'),
+        url('Galderglynn1884El-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Rg';
+    src: url('Galderglynn1884Rg-BoldItalic.eot');
+    src: local('Galderglynn1884Rg-BoldItalic'),
+        url('Galderglynn1884Rg-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884Rg-BoldItalic.woff2') format('woff2'),
+        url('Galderglynn1884Rg-BoldItalic.woff') format('woff'),
+        url('Galderglynn1884Rg-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Cd Db';
+    src: url('Galderglynn1884CdDb-Regular.eot');
+    src: local('Galderglynn1884CdDb-Regular'),
+        url('Galderglynn1884CdDb-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884CdDb-Regular.woff2') format('woff2'),
+        url('Galderglynn1884CdDb-Regular.woff') format('woff'),
+        url('Galderglynn1884CdDb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 El';
+    src: url('Galderglynn1884El-Italic.eot');
+    src: local('Galderglynn1884El-Italic'),
+        url('Galderglynn1884El-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884El-Italic.woff2') format('woff2'),
+        url('Galderglynn1884El-Italic.woff') format('woff'),
+        url('Galderglynn1884El-Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Sq Db';
+    src: url('Galderglynn1884SqDb-Regular.eot');
+    src: local('Galderglynn1884SqDb-Regular'),
+        url('Galderglynn1884SqDb-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884SqDb-Regular.woff2') format('woff2'),
+        url('Galderglynn1884SqDb-Regular.woff') format('woff'),
+        url('Galderglynn1884SqDb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Cd Rg';
+    src: url('Galderglynn1884CdRg-BoldItalic.eot');
+    src: local('Galderglynn1884CdRg-BoldItalic'),
+        url('Galderglynn1884CdRg-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884CdRg-BoldItalic.woff2') format('woff2'),
+        url('Galderglynn1884CdRg-BoldItalic.woff') format('woff'),
+        url('Galderglynn1884CdRg-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Engraved Cd';
+    src: url('Galderglynn1884EngravedCd-Regular.eot');
+    src: local('Galderglynn1884EngravedCd-Regular'),
+        url('Galderglynn1884EngravedCd-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884EngravedCd-Regular.woff2') format('woff2'),
+        url('Galderglynn1884EngravedCd-Regular.woff') format('woff'),
+        url('Galderglynn1884EngravedCd-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Rg';
+    src: url('Galderglynn1884Rg-Regular.eot');
+    src: local('Galderglynn1884Rg-Regular'),
+        url('Galderglynn1884Rg-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884Rg-Regular.woff2') format('woff2'),
+        url('Galderglynn1884Rg-Regular.woff') format('woff'),
+        url('Galderglynn1884Rg-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Lt';
+    src: url('Galderglynn1884Lt-Regular.eot');
+    src: local('Galderglynn1884Lt-Regular'),
+        url('Galderglynn1884Lt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884Lt-Regular.woff2') format('woff2'),
+        url('Galderglynn1884Lt-Regular.woff') format('woff'),
+        url('Galderglynn1884Lt-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Cd Db';
+    src: url('Galderglynn1884CdDb-Italic.eot');
+    src: local('Galderglynn1884CdDb-Italic'),
+        url('Galderglynn1884CdDb-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884CdDb-Italic.woff2') format('woff2'),
+        url('Galderglynn1884CdDb-Italic.woff') format('woff'),
+        url('Galderglynn1884CdDb-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Cd Rg';
+    src: url('Galderglynn1884CdRg-Bold.eot');
+    src: local('Galderglynn1884CdRg-Bold'),
+        url('Galderglynn1884CdRg-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884CdRg-Bold.woff2') format('woff2'),
+        url('Galderglynn1884CdRg-Bold.woff') format('woff'),
+        url('Galderglynn1884CdRg-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Rg';
+    src: url('Galderglynn1884Rg-Bold.eot');
+    src: local('Galderglynn1884Rg-Bold'),
+        url('Galderglynn1884Rg-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884Rg-Bold.woff2') format('woff2'),
+        url('Galderglynn1884Rg-Bold.woff') format('woff'),
+        url('Galderglynn1884Rg-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Cd Rg';
+    src: url('Galderglynn1884CdRg-Regular.eot');
+    src: local('Galderglynn1884CdRg-Regular'),
+        url('Galderglynn1884CdRg-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884CdRg-Regular.woff2') format('woff2'),
+        url('Galderglynn1884CdRg-Regular.woff') format('woff'),
+        url('Galderglynn1884CdRg-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Galderglynn 1884 Db';
+    src: url('Galderglynn1884Db-Italic.eot');
+    src: local('Galderglynn1884Db-Italic'),
+        url('Galderglynn1884Db-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Galderglynn1884Db-Italic.woff2') format('woff2'),
+        url('Galderglynn1884Db-Italic.woff') format('woff'),
+        url('Galderglynn1884Db-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PP Right Gothic'), url('PPRightGothic-TallRegular.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: normal;
+    font-weight: 100;
+    src: local('PP Right Gothic'), url('PPRightGothic-SpatialFine.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: normal;
+    font-weight: 100;
+    src: local('PP Right Gothic'), url('PPRightGothic-TallFine.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: italic;
+    font-weight: 100;
+    src: local('PP Right Gothic'), url('PPRightGothic-CompactFineItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: normal;
+    font-weight: 200;
+    src: local('PP Right Gothic'), url('PPRightGothic-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: normal;
+    font-weight: 200;
+    src: local('PP Right Gothic'), url('PPRightGothic-NarrowLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: normal;
+    font-weight: 500;
+    src: local('PP Right Gothic'), url('PPRightGothic-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: normal;
+    font-weight: 500;
+    src: local('PP Right Gothic'), url('PPRightGothic-TightMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: normal;
+    font-weight: 500;
+    src: local('PP Right Gothic'), url('PPRightGothic-WideMedium.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: italic;
+    font-weight: 500;
+    src: local('PP Right Gothic'), url('PPRightGothic-MediumItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: italic;
+    font-weight: 500;
+    src: local('PP Right Gothic'), url('PPRightGothic-WideMediumItalic.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: normal;
+    font-weight: 800;
+    src: local('PP Right Gothic'), url('PPRightGothic-CompactDark.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: normal;
+    font-weight: 900;
+    src: local('PP Right Gothic'), url('PPRightGothic-CompactBlack.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: normal;
+    font-weight: 900;
+    src: local('PP Right Gothic'), url('PPRightGothic-SpatialBlack.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: normal;
+    font-weight: 900;
+    src: local('PP Right Gothic'), url('PPRightGothic-WideBlack.woff') format('woff');
+}
+@font-face {
+    font-family: 'PP Right Gothic';
+    font-style: italic;
+    font-weight: 900;
+    src: local('PP Right Gothic'), url('PPRightGothic-SpatialBlackItalic.woff') format('woff');
+}

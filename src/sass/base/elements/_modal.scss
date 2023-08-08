@@ -1,0 +1,327 @@
+/* Стили для модальных окон */
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    transition: 0.3s all;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.modal {
+   opacity: 0;
+   visibility: hidden;
+   width: 100%;
+   max-width: 1000px;
+   max-height: 96vh;
+   height: 100%;
+   overflow: auto;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 950;
+   padding: 40px;
+   background-color: $color__background-body;
+   transition: 0.3s all;
+
+   @media (max-width: 1039px) {
+       width: 93%;
+   }
+
+   &.active {
+      opacity: 1;
+      visibility: visible;
+   }
+
+   &.form-error {
+       height: auto;
+   }
+}
+
+.contact-form-modal {
+
+    &__close {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 135%;
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 124%;
+        margin-top: 8px;
+        margin-bottom: 40px;
+    }
+
+    &__content {
+
+        &__form {
+
+            &__group {
+                display: flex;
+                gap: 16px;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+
+                & input {
+                    width: calc((100% - 16px) / 2);
+
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
+                }
+
+                & .required-input {
+                    width: calc((100% - 16px) / 2);
+
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
+
+                    & input {
+                        width: 100%;
+                    }
+
+                    &__warning {
+                        display: block;
+                        opacity: 0;
+                        visibility: hidden;
+                        height: 0;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 124%;
+                        color: $color__warning;
+
+                        &.active {
+                            opacity: 1;
+                            visibility: visible;
+                            height: fit-content;
+                            margin-top: 8px;
+                        }
+                    }
+                }
+            }
+
+            &__select {
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 52px;
+                background: $color__bg-input;
+                // cursor: pointer;
+                margin-bottom: 20px;
+
+                &__icon {
+                    position: absolute;
+                    top: 24px;
+                    right: 16px;
+                    transition: 0.3s all;
+
+                    &.active {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                &__text {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    width: 100%;
+                    padding-left: 16px;
+                    color: $color__input-text;
+                    cursor: pointer;
+                    z-index: 99;
+                }
+
+                &__results {
+                    margin-left: 16px;
+                }
+
+                &__options {
+                    position: absolute;
+                    top: 60px;
+                    left: 0;
+                    width: 100%;
+                    opacity: 0;
+                    visibility: hidden;
+                    background: $color__background-body;
+                    box-shadow: 0px 8px 20px $color__box-shadow;
+                    transition: 0.3s all;
+
+                    &.active {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+
+                    &__item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        height: 52px;
+                        padding: 0 16px;
+                        cursor: pointer;
+                        transition: 0.3s all;
+
+                        &:not(:last-child) {
+                            border-bottom: 1px solid $color__border-header;
+                        }
+
+                        &:hover {
+                            background: $color__hover-select;
+                        }
+
+                        &__text {}
+
+                        &__check {
+                            opacity: 0;
+                            visibility: hidden;
+
+                            &.active {
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__textarea {
+
+                & textarea {
+                    padding: 16px;
+                    background: $color__bg-input;
+                    resize: none;
+                }
+
+                &__warning {
+                    display: block;
+                    opacity: 0;
+                    visibility: hidden;
+                    height: 0;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 124%;
+                    color: $color__warning;
+
+                    &.active {
+                        opacity: 1;
+                        visibility: visible;
+                        height: fit-content;
+                        margin-top: 8px;
+                    }
+                }
+            }
+
+            &__button {
+                margin-top: 32px;
+                margin-left: auto;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+
+                & button {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 124%;
+                    text-transform: uppercase;
+                    // margin-top: 62px;
+                    padding: 14px 20px;
+                    background: $color__background-touch;
+                    color: $color__text-white;
+                    border: 1px solid $color__background-touch;
+
+                    &:hover {
+                        background: $color__text-white;
+                        color: $color__background-touch;
+                        border: 1px solid $color__background-touch;
+                    }
+                }
+            }
+        }
+    }
+}
+
+button.menu-clouse {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background: none;
+    z-index: 99;
+
+    @media (max-width: 1023px) {
+        display: block;
+    }
+}
+
+.agreement {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+
+    &__item {
+        display: block;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        & label {
+            display: flex;
+            gap: 10px;
+            // align-items: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            cursor: pointer;
+
+            & svg {
+                flex: none;
+
+                &.checked-yes {
+                    display: none;
+                }
+
+                &.checked-no {}
+            }
+        }
+
+        & input {
+            display: none;
+        }
+    }
+}
+
+.form-error-title {
+    margin-top: 40px;
+}

@@ -1,0 +1,42 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: none;
+	border-color: $color__border-button;
+	// border-radius: 3px;
+	background: none;
+	color: rgba(0, 0, 0, 0.8);
+	line-height: 1;
+	padding: 0;
+	cursor: pointer;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+		// border: none;
+	}
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.site-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 6px 12px;
+	border: 1px solid $color__text-main;
+	border-radius: 44px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 132%;
+	text-transform: uppercase;
+	transition: 0.3s all;
+}

@@ -1,0 +1,226 @@
+.hero-front {
+    padding: 71px 12px 63px 12px;
+    border-bottom: 1px solid $color__border-header;
+
+	&__title {
+        // text-align: center;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 154px;
+        line-height: 90%;
+        text-transform: uppercase;
+        margin-bottom: 86px;
+        margin-left: 110px;
+
+        @media (max-width: 1349px) {
+            font-size: 120px;
+        }
+
+        @media (max-width: 1099px) {
+            font-size: 100px;
+            margin-left: 0;
+        }
+
+        @media (max-width: 799px) {
+            font-size: 80px;
+        }
+
+        @media (max-width: 659px) {
+            font-size: 60px;
+        }
+
+        // @media (max-width: 479px) {
+        //     font-size: 60px;
+        // }
+
+        @media (max-width: 499px) {
+            font-size: 40px;
+        }
+
+	}
+
+	&__subtitle {
+        text-align: center;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 135%;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+
+	}
+
+	&__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        // max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__item {
+            flex: none;
+
+    	}
+
+	}
+
+}
+
+.partners-title {
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 90%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.marquee-front {
+    // height: 212px;
+    overflow: hidden;
+
+    &__content {
+
+        & img {
+            pointer-events: none;
+        }
+    }
+}
+
+.js-marquee {
+    display: flex;
+    align-items: center;
+    // border-top: 1px solid $color__border-header;
+
+    & img {
+        padding: 0 20px;
+    }
+}
+
+.section-page {
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
+
+.services {
+    // padding-top: 112px;
+    // padding-bottom: 112px;
+
+    &__content {
+        margin-top: 56px;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            padding: 24px 0;
+            border-top: 1px solid $color__border-header;
+
+            @media (max-width: 767px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            &__title {
+                width: 50%;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 32px;
+                line-height: 135%;
+                padding-left: 20px;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                    padding-right: 20px;
+                }
+            }
+
+            &__description {
+                width: 50%;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 124%;
+                padding-right: 20px;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                    padding-left: 20px;
+                }
+            }
+
+            &:last-child {
+                border-bottom: 1px solid $color__border-header;
+            }
+        }
+    }
+}
+
+.extras {
+    padding-bottom: 112px;
+}
+
+.get-touch {
+    background: $color__background-touch;
+    padding: 156px 0;
+
+    @media (max-width: 899px) {
+        padding: 56px 20px;
+    }
+
+	&__subtitle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 132%;
+        color: $color__get-touch;
+        margin-bottom: 64px;
+        text-align: center;
+
+	}
+
+	&__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 132px;
+        line-height: 90%;
+        text-align: center;
+        color: $color__text-white;
+        margin-bottom: 80px;
+
+        @media (max-width: 1459px) {
+            font-size: 120px;
+        }
+
+        @media (max-width: 899px) {
+            font-size: 110px;
+        }
+
+        @media (max-width: 529px) {
+            font-size: 100px;
+        }
+
+        @media (max-width: 429px) {
+            font-size: 80px;
+        }
+	}
+
+	&__button {
+
+        & button {
+            margin: 0 auto;
+            background: $color__text-white;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 124%;
+
+            &:hover {
+                background: $color__background-touch;
+                color: $color__text-white;
+                border: 1px solid $color__text-white;
+            }
+        }
+	}
+
+}
