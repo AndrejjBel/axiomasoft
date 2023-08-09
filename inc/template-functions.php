@@ -234,9 +234,9 @@ function axiomasoft_ajax(){
 					'taxonomy' => 'services',
 					'field'    => 'term_id',
 					'terms'    => $_POST['term']
-				]
-			]
-		) );
+					]
+					]
+				) );
 	}
 	global $post;
 	$card_number = 1;
@@ -244,18 +244,31 @@ function axiomasoft_ajax(){
 	foreach( $my_posts as $post ){
 		setup_postdata( $post );
 		$term_list = wp_get_post_terms( $post->ID, 'services', array('fields' => 'names') );
-		$img_id = carbon_get_post_meta( $post->ID, 'image_back' );
 
-		$posts .= '<div class="featured__content__card">
-			<div class="featured__content__card-number' . $card_number . '">
-				<div class="featured__content__card__img front">' . get_the_post_thumbnail() . '</div>
-				<div class="featured__content__card__img back">' . wp_get_attachment_image( $img_id, 'full' ) . '</div>
+		$img_id = carbon_get_post_meta( $post->ID, 'image_back' );
+		if ( $post->ID != 37 && $post->ID != 51 && $post->ID != 54 ) {
+			$st = ' style="display:none;"';
+			$img_cl = '';
+			$url = '#';
+		} else {
+			$st = '';
+			$img_cl = ' front';
+			$url = get_permalink();
+		}
+		?>
+		<div class="featured__content__card" data-id="<?php echo $post->ID; ?>">
+			<div class="featured__content__card-number<?php echo $card_number; ?>">
+				<a class="featured__content__card__link" href="<?php the_permalink(); ?>"<?php echo $st; ?>></a>
+				<div class="featured__content__card__img<?php echo $img_cl; ?>"><?php the_post_thumbnail(); ?></div>
+				<div class="featured__content__card__img back" style="background: url(<?php echo wp_get_attachment_url( $img_id ); ?>);
+				background-position: center; background-repeat: no-repeat; background-size: cover;"<?php echo $st; ?>></div>
 				<div class="featured__content__card__title">
-					<a href="' . get_the_permalink() . '">' . get_the_title() . '</a>
+					<a href="<?php echo $url; ?>"><?php the_title(); ?></a>
 				</div>
-				<div class="featured__content__card__text">' . implode(", " ,  $term_list) . '</div>
+				<div class="featured__content__card__text"><?php echo implode(", " ,  $term_list);;?></div>
 			</div>
-		</div>';
+		</div>
+		<?php
 
 		if ($card_number == 6) {
 			$card_number = 0;
@@ -267,14 +280,20 @@ function axiomasoft_ajax(){
 		setup_postdata( $post );
 		$term_list = wp_get_post_terms( $post->ID, 'services', array('fields' => 'names') );
 
-	$posts_list .= '<div class="extras__content__list">
-		<a class="extras__content__list__link" href="' . get_the_permalink() . '"></a>
-		<div class="extras__content__list__title">' . get_the_title() . '</div>
-		<div class="extras__content__list__industry">' . axiomasoft_industryes_post($post->ID, ' / ') . '</div>
-		<div class="extras__content__list__text">' . implode(", " ,  $term_list) . '</div>
-		<div class="extras__content__list__img" style="background: url(' . get_the_post_thumbnail_url() . '); background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
-	</div>';
-
+		if ( $post->ID != 37 && $post->ID != 51 && $post->ID != 54 ) {
+			$url = '#';
+		} else {
+			$url = get_permalink();
+		}
+		?>
+		<div class="extras__content__list">
+			<a class="extras__content__list__link" href="<?php echo $url; ?>"></a>
+			<div class="extras__content__list__title"><?php the_title(); ?></div>
+			<div class="extras__content__list__industry"><?php echo axiomasoft_industryes_post($post->ID, ' / '); ?></div>
+			<div class="extras__content__list__text"><?php echo implode(", " ,  $term_list);?></div>
+			<div class="extras__content__list__img" style="background: url(<?php echo get_the_post_thumbnail_url(); ?>); background-position: center; background-repeat: no-repeat; background-size: cover;"></div>
+		</div>
+		<?php
 	}
 	wp_reset_postdata();
 
